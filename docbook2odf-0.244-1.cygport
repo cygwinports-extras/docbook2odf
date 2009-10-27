@@ -1,0 +1,16 @@
+DESCRIPTION="Converts DocBook XML to OpenDocument"
+HOMEPAGE="http://open.comsultia.com/docbook2odf/"
+SRC_URI="http://open.comsultia.com/docbook2odf/dwn/${P}.tar.gz"
+
+src_compile() { :; }
+
+src_install() {
+	cd ${S}
+
+	dodir /usr/share/${PN}
+	cp -r xsl ${D}/usr/share/${PN}/
+
+	dobin utils/docbook2odf
+	doman docs/docbook2odf.1
+#	domenu bindings/desktop/docbook2odf.desktop
+}

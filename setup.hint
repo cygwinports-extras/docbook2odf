@@ -1,0 +1,8 @@
+category: Text
+requires: perl
+sdesc: "Converts DocBook XML to OpenDocument"
+ldesc: "Docbook2odf is a toolkit that automaticaly converts DocBook XML 
+to OASIS OpenDocument (ODF, the ISO standardized format used for texts, 
+spreadsheets and presentations). Conversion is based on a XSLT which 
+makes it easy to convert DocBook->ODF, ODT, ODS and ODP as all these 
+documents are XML based."
